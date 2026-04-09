@@ -1,42 +1,14 @@
 {
-    "manufacturer": "Viktus Designs",
     "name": "krona",
-    "maintainer": "keebnewb",
-    "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x114A",
-        "vid": "0x5644"
-    },
-    "features": {
-        "bootmagic": true,
-        "command": false,
-        "console": false,
-        "extrakey": true,
-        "mousekey": true,
-        "nkro": true,
-        "rgblight": true
-
-    },
-    "rgblight": {
-            "led_count": 1,
-            "pin": "D1",
-            "hue_steps": 8,
-            "saturation_steps": 8,
-            "brightness_steps": 8,
-            "animations": {
-                "all": true
-            },
-            "sleep": true
-        },
+    "productId": "0x114A",
+    "vendorId": "0x5644",
+    "lighting": "qmk_rgblight",
     "matrix": {
         "cols": 10,
         "rows": 12
-    },
-    "processor": "atmega32u4",
-    "bootloader": "atmel-dfu",
-    "diode_direction": "COL2ROW",
+},
 
-    "layouts":{
+    "layouts": {
         "labels": [
             "Split Backspace",
             "Stepped Caps Lock",
