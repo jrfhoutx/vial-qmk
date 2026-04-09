@@ -1,6 +1,6 @@
 {
     "manufacturer": "Viktus Designs",
-    "keyboard_name": "Krona",
+    "name": "krona",
     "maintainer": "keebnewb",
     "usb": {
         "device_version": "1.0.0",
