@@ -1,9 +1,22 @@
 {
     "manufacturer": "Viktus Designs",
-    "keyboard_name": "viktus/krona",
+    "keyboard_name": "krona",
     "maintainer": "keebnewb",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x114A",
+        "vid": "0x5644"
+    },
     "bootloader": "atmel-dfu",
+    "processor": "atmega32u4",
+
     "diode_direction": "COL2ROW",
+    "matrix_pins": {
+        "cols": ["D0", "D2", "D3", "D5", "F5", "F0", "E6", "B3", "B2", "B1"],
+        "rows": ["F6", "F7", "C7", "C6", "B6", "B5", "B4", "D7", "D6", "D4", "F1", "F4"]
+    },
+
     "features": {
         "bootmagic": true,
         "command": false,
@@ -11,20 +24,32 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "sleep": true
-        }
+        "rgblight": true,
+    },
 
-    "matrix_pins": {
-        "cols": ["D0", "D2", "D3", "D5", "F5", "F0", "E6", "B3", "B2", "B1"],
-        "rows": ["F6", "F7", "C7", "C6", "B6", "B5", "B4", "D7", "D6", "D4", "F1", "F4"]
+    "bootmagic": {
+        "matrix": [0, 0]
     },
-    "processor": "atmega32u4",
-    "url": "",
-    "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x114A",
-        "vid": "0x5644"
+    "build": {
+        "lto": true
     },
+
+        "rgblight": {
+            "led_count": 1,
+            "hue_steps": 8,
+            "saturation_steps": 8,
+            "brightness_steps": 8,
+            "animations": {
+                "breathing": true,
+                "rainbow_swirl": true,
+                "twinkle": true
+            },
+            "sleep": true
+        },
+    "ws2812": {
+        "pin": "D1"
+    },
+
     "layouts": {
       "LAYOUT_default": {
         "layout": [
